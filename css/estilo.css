@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+/** CUERPO **/
+body{
+    background-color: #f3f6fa;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+
+}
+/** ENCABEZADO **/
+header{
+    background-color: black;
+    text-decoration: none;
+    width: 100%;
+    position:fixed;
+   
+}
+header h1{
+    padding: 20px;
+    background-color: black;
+    display: inline-block;
+    color: #eeeeee;
+}
+header h1 a{
+    color:#b59a61;
+    text-decoration: none;
+}
+header nav{
+    background-color: black;
+    padding: 30px;
+    float:right;
+    line-height: 20px;
+}
+nav ul li a{
+    color: #eeeeee;
+    padding: 10px;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 0px;
+}
+/** PRINCIPAL **/
+main{
+    background-color: rgb(23, 168, 35);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    text-decoration-color: rgb(22, 39, 190);
+    padding-top: 100px;
+    align-items: center;/* Centra imagenes horizontalmente */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+/** PIE DE PAGINA **/
+footer{
+    background-color: rgba(209, 203, 187, 0.041);
+    align-items: center;/* Centra imagenes horizontalmente */
+    text-align: center; /* Centra el texto horizontalmente */
+    display: flex;
+    flex-direction: column;
+}
+.form-header {
+    text-align: center;
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+  
+    width: 80%;
+    margin: 10px auto;
+    padding: 50px;
+  }
+  
+  .form-header h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+.redes{
+    background-color: rgba(3, 3, 1, 0.918);
+    color: #eeeeee;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+}
+/* ------------- Formulario ------------- */
+  
+.formulario {
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+  
+    width: 80%;
+    padding: 50px;
+    margin: 30px 0 40px 0;
+  }
+
+  /* ------------- Campos del Formulario ------------- */
+
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .form-row input[type="text"], .form-row input[type="email"] {
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+  }
+  
+  .form-row label {
+    margin-bottom: 3px;
+    text-align: initial;
+  }
+  
+  .form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+  
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+  
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+  
+    width: 100%;
+  }
+
+  .form-row button {
+    font-size: 16px;
+    font-weight: bold;
+  
+    color: #ffffff;
+    background-color: #5995da;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 40px;
+    cursor: pointer;
+  }
+  
+  .form-row button:hover {
+    background-color: #76aeed;
+  }
+  
+  
+  .form-row button:active {
+    background-color: #407fc7;
+  }
+/** ESTILOS GENERALES**/
+
+/** FUENTES **/
+.fuente-clara {color: #eeeeee;}
+
+.fuente-oscura {color: #22211f;}
+
+.fuente-acento {color: #b59a61;}
+/** MENU **/
+
+.seccion-uno{
+    padding: 20px;
+    margin-left: 20px;
+    text-align: center; /* Centra el texto horizontalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;/* Centra imagenes horizontalmente */
+
+}
+
+.seccion-portafolio{
+    background-color: aqua;
+    padding: 20px;
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.seccion-portafolio h2{
+    background-color: brown;
+    text-align: center;
+}
+/* Estilos CSS para las tarjetas */
+.tarjetas-contenedor {
+    display: flex; /* Utilizamos flexbox para alinear las tarjetas horizontalmente */
+}
+
+.tarjeta {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+}
+
+.tarjeta .imagen {
+    height: auto;
+}
+.tarjeta .imagen img{
+    border-radius: 10%;
+}
+.tarjeta .titulo {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.tarjeta .descripcion {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+
+@media (max-width: 768px) {
+    
+    .seccion-uno{
+        padding: 40px;
+    }
+    .seccion-portafolio{
+        width: 60%;
+        align-items: center;/* Centra imagenes horizontalmente */
+        text-align: center; /* Centra el texto horizontalmente */
+    }
+    .tarjetas-contenedor{
+        width: 35%;
+        flex-direction: column; /* Cambia la dirección de flex a columna */
+    }
+
+    .tarjeta {
+        flex: 1; /* Ocupa todo el ancho disponible */
+    }
+    
+    .menu li {
+        margin-right: 20px;
+    }
+    
+    
+        .menu {
+            display: none;
+            flex-direction: column;
+            background-color: black;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+            float:right;
+            list-style: none;
+            text-align: center; 
+        }
+    
+        .menu.active {
+            display: flex;
+        }
+    
+        .checkbtn {
+            display: block;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            font-size: 30px;
+            color: white;
+            float:right;
+            margin-right: 40px;
+            line-height: 80px;
+            font-size: 25px;
+        }
+    
+        .navbar input[type="checkbox"] {
+            display: none;
+        }
+    
+        .navbar input[type="checkbox"]:checked ~ .menu {
+            display: flex;
+        }
+  /* ACTIVE */
+  .navbar.active {
+    height: 100vh;
+    color: #eeeeee;
+    
+  }
+  .navbar.active ul.menu li a:hover {
+    color: #eeeeee;
+  }
+  .navbar.active ul.menu li{
+    margin-bottom: 20px; /* Ajusta el valor según la cantidad de espacio que desees */
+  }
+  .navbar.active ul.menu {
+    padding-top: 20px;
+    opacity: 1;
+    display: flex;
+  }
+   /* ------------- Para Pantallas de más de 768px ------------- */
+  .form-header {
+    padding: 50px;
+  }
+
+  .form-row {
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  .form-row input[type="text"] {
+    width: 250px;
+    height: initial;
+  }
+  .form-row label {
+    text-align: right;
+    width: 120px;
+    margin-top: 7px;
+    padding-right: 20px;
+  }
+    /* ------------- Para Pantallas de más de 768px ------------- */
+
+
+  .form-row textarea {
+  width: 250px;
+  }
+  
+  /* ------------- Para Pantallas de más de 768px ------------- */
+
+  .form-row button {
+  margin-left: 120px;
+  }
+}
+/* FIN de Estilos para pantallas pequeñas */
